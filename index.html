@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Qalyn Calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Dowry Calculator</h1>
+                <form>
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="blank"></option>
+                        <option value="bachelor">Bachelor's degree</option>
+                        <option value="college">College degree</option>
+                        <option value="high_school">High school degree</option>
+                        <option value="middle_school">Middle school degree</option>
+                    </select>
+                    <hr>
+                    
+                    <label for="family_networth">Family networth:</label><br>
+                    <select id="networth">
+                        <option value="blank"></option>
+                        <option value="upper_class">More than 100,000$</option>
+                        <option value="middle_class">Between 50,000$ and 100,000$</option>
+                        <option value="lower_class">Less than 50,000$</option>
+                    </select>
+                    <hr>
+                   
+                    <label for="caste">Caste:</label><br>
+                    <select id="caste">
+                        <option value="blank"></option>
+                        <option value="brahmin">Brahmin</option>
+                        <option value="kshatriya">Kshatriya</option>
+                        <option value="vaishya">Vaishya</option>
+                        <option value="shudra">Shudra</option>
+                        <option value="untouchable">Varna - Untouchable</option>
+                    </select>
+                    <hr>
+                
+                    <label for="skills">Skills:</label><br>
+                    <input type="checkbox" id="musician" value="musician"> Plays a musical instrument<br>
+                    <input type="checkbox" id="cook" value="cook"> Good cook<br>
+                    <input type="checkbox" id="easygoing" value="easygoing"> Easygoing character<br>
+                    <input type="checkbox" id="singer" value="singer"> Sings well<br>
+                    <hr>
+
+                    <label for="age">Age:</label><br>
+                    <input type="radio" name="age" value="young"> Between 18-23<br>
+                    <input type="radio" name="age" value="middle"> Between 24-27<br>
+                    <input type="radio" name="age" value="older"> 28+<br>
+                    <hr>
+
+                    <label for="reputation">Reputation:</label><br>
+                    <input type="checkbox" id="parent_gossip" value="parent_gossip"> Gossips about parent's attitude<br>
+                    <input type="checkbox" id="character_gossip" value="character_gossip"> Gossips about character<br>
+                    <input type="checkbox" id="general_gossip" value="general_gossip"> General gossips around the person<br>
+                    <hr>
+                </form>
+                <button id="submit" type="button" class="btn btn-primary">Calculate price</button>
+                <p id="result"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
