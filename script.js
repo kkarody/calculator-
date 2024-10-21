@@ -6,7 +6,7 @@ function calculateDowry() {
     const caste = document.getElementById('caste').value;
     const skills = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
         .map(skill => skill.value);
-    const age = document.getElementById('age').value;
+    const age = document.querySelector('input[name="age"]:checked').value;
     const reputation = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
         .map(rep => rep.value);
 
